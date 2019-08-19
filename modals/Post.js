@@ -17,7 +17,25 @@ const PostSchema = mongoose.Schema({
     saves:{
         type: Number,
         default: 0
+    },
+    macros:{
+        type: Object,
+        required: true
+    },
+    ingredients:{
+        type: Object,
+        required: true
+    },
+    directions:{
+        type: Object,
+        required: true
+    },
+    recommended:{
+        type: Array
+    },
+    comments:{
+        type: Array
     }
 });
 
-module.exports = mongoose.model('post', PostSchema);
+module.exports = mongoose.model('posts', PostSchema);
