@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import './searchBar.scss';
 
 class SearchBar extends Component{
     constructor(){
@@ -6,7 +7,7 @@ class SearchBar extends Component{
     }
     render(){
         return(
-            <input type = 'text' />
+            <input type = 'text' id = 'searchBar'/>
         )
     }
 }

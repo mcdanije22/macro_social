@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import SearchBar from './searchBar/SearchBar';
+import SubMenu from './subMenu/SubMenu';
+import './navBar.scss';
 
 class NavBar extends Component{
     constructor(){
@@ -7,7 +9,10 @@ class NavBar extends Component{
     }
     render(){
         return(
-            <SearchBar />
+            <div id = 'menu'>
+                <SearchBar />
+                <SubMenu />
+            </div>
         )
     }
 }
