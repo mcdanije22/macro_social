@@ -13,10 +13,6 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get('/', (req,res)=>{
-    res.send('test')
-})
-
 // ROUTES
 const postsRoute = require('./routes/posts');
 app.use('/posts', postsRoute);

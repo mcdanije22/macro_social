@@ -3,8 +3,7 @@ const mongoose = require('mongoose')
 const PostSchema = mongoose.Schema({
     user:{
         type: String,
-        required: true,
-        ref: 'users'
+        required: true
     },
     title:{
         type: String,
@@ -23,7 +22,7 @@ const PostSchema = mongoose.Schema({
         required: true
     },
     ingredients:{
-        type: Object,
+        type: Array,
         required: true
     },
     directions:{
