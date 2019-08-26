@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
+import './app.scss';
 import { Route, Switch } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
-import axios from 'axios';
-
+import Home from './components/home/Home';
+import FooterMenu from './components/footerMenu/FooterMenu';
 // class App extends Component{
 //   constructor(props){
 //     super(props);
@@ -23,9 +23,12 @@ const App = () =>{
   return(
     <div className = 'App'>
       <NavBar />
-      <Switch>
-      
-      </Switch>
+      <div id = 'main'>
+        <Switch>
+        
+        </Switch>
+      </div>
+      <FooterMenu />  
     </div>
   )
 }
