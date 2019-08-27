@@ -25,7 +25,7 @@ const App = () =>{
       <NavBar />
       <div id = 'main'>
         <Switch>
-        
+          <Home />
         </Switch>
       </div>
       <FooterMenu />  
