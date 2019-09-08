@@ -7,6 +7,8 @@ const Home = () =>{
         <div id = 'home'>
         <div id = "cards">
             <FoodCard />
+            <FoodCard />
+
         </div>
             {/* <div id = 'topImg'>
                 <img src = 'https://via.placeholder.com/400x250' />

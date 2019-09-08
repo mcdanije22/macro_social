@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import './searchBar.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 class SearchBar extends Component{
     constructor(){
@@ -7,7 +9,7 @@ class SearchBar extends Component{
     }
     render(){
         return(
-            <input type = 'text' id = 'searchBar'/>
+            <input type = 'text' id = 'searchBar' placeholder='search' />
         )
     }
 }
