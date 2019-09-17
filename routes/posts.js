@@ -7,7 +7,6 @@ const Post = require('../modals/Post');
 router.get('/', (req,res)=>{
     Post.find()
     .then(posts => res.json(posts));
-    // res.send('these are post')
 })
 
 router.post('/add', (req,res)=>{

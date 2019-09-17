@@ -8,11 +8,11 @@ const FooterMenu = () =>{
     return(
         <div id = 'footerMenu'>
             <ul id = 'buttonGroup'>
-                <button type='button'><FontAwesomeIcon className='footerMenuButtons' icon={faHome} /></button>     
-                <button type='button'><FontAwesomeIcon className='footerMenuButtons' icon={faHeart} /></button>     
-                <button type='button'><FontAwesomeIcon className='footerMenuButtons' icon={faPlus} /></button>     
-                <button type='button'><FontAwesomeIcon className='footerMenuButtons' icon={faBell} /></button>     
-                <button type='button'><FontAwesomeIcon className='footerMenuButtons' icon={faUser} /></button>     
+                <button type='button' className='footerMenuButtons' ><FontAwesomeIcon icon={faHome} /></button>     
+                <button type='button' className='footerMenuButtons' ><FontAwesomeIcon icon={faHeart} /></button>     
+                <button type='button' className='footerMenuButtons' ><FontAwesomeIcon icon={faPlus} /></button>     
+                <button type='button' className='footerMenuButtons' ><FontAwesomeIcon icon={faBell} /></button>     
+                <button type='button' className='footerMenuButtons' ><FontAwesomeIcon icon={faUser} /></button>     
             </ul>
         </div>
     )

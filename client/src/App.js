@@ -2,7 +2,7 @@ import React from 'react';
 import './app.scss';
 import { Route, Switch } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
-import Home from './components/home/Home';
+import HomeFeed from './components/homeFeed/HomeFeed';
 import FooterMenu from './components/footerMenu/FooterMenu';
 // class App extends Component{
 //   constructor(props){
@@ -25,7 +25,7 @@ const App = () =>{
       <NavBar />
       <div id = 'main'>
         <Switch>
-          <Home />
+          <HomeFeed />
         </Switch>
       </div>
       <FooterMenu />  
