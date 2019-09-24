@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import HomeFeed from './components/homeFeed/HomeFeed';
 import FooterMenu from './components/footerMenu/FooterMenu';
+import addPost from './components/addPost/AddPost';
 // class App extends Component{
 //   constructor(props){
 //     super(props);
@@ -25,7 +26,8 @@ const App = () =>{
       <NavBar />
       <div id = 'main'>
         <Switch>
-          <HomeFeed />
+          <Route exact path='/' component={HomeFeed} />
+          <Route exact path='/addpost' component={addPost} />
         </Switch>
       </div>
       <FooterMenu />  
