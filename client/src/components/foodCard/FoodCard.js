@@ -8,12 +8,12 @@ const FoodCard = () =>{
     return(
         <div className='foodCard'>
             <div className='cardTopRow'>
-                <img src='https://via.placeholder.com/50' />
+                <img src='https://via.placeholder.com/50' alt='user'/>
                 <h3>Keto Pizza</h3>
             </div>
             <hr />
             <div className='cardImage'>
-                <img src='https://via.placeholder.com/300x200' />
+                <img src='https://via.placeholder.com/300x200' alt='food'/>
             </div>
             {/* <hr /> */}
             <div className='bottomCard'>
