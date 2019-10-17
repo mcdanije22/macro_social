@@ -1,7 +1,9 @@
 import React,{Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft} from '@fortawesome/free-solid-svg-icons';
+import './addPost.scss';
 import axios from 'axios';
+import { Button } from 'reactstrap';
 
 class AddPost extends Component{
     constructor(){
@@ -42,8 +44,14 @@ class AddPost extends Component{
             <div>
                 <h3><FontAwesomeIcon icon={faChevronLeft} /> back</h3>
                 <h2>Post new food</h2>
-                <input placeholder='name' />
-                <button type='button' onClick={this.getItem}>test</button>
+                <div id='addForm'>
+                    <h5>Title</h5>
+                    <input placeholder='name' className='addInput'/>
+                    <button>Upload Photo</button>
+                    <h5>Ingredients</h5>
+                    <Button className='plusButton' color='primary'>+</Button>
+                    <button type='button' onClick={this.getItem}>test</button>
+                </div>
             </div>
         )
     }
